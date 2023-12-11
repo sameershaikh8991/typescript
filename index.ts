@@ -33,3 +33,13 @@ const evenNum :number[] =a.filter((cnum) =>  cnum%2===0);
 console.log(evenNum);
 
 
+
+
+function time(hour:number|string,min:number|string){
+    if(typeof hour ==="string"){
+        console.log("hour is string")
+    }
+    return hour+":"+min;
+}
+
+console.log(time(1,"30"));

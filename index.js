@@ -17,3 +17,10 @@ const numToString = a.map((b) => b.toString());
 console.log(numToString);
 const evenNum = a.filter((cnum) => cnum % 2 === 0);
 console.log(evenNum);
+function time(hour, min) {
+    if (typeof hour === "string") {
+        console.log("hour is string");
+    }
+    return hour + ":" + min;
+}
+console.log(time(1, "30"));
